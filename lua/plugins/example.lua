@@ -7,6 +7,9 @@ return {
   { import = "lazyvim.plugins.extras.lang.typescript" },
   { import = "lazyvim.plugins.extras.lang.json" },
 
+  { import = "lazyvim.plugins.extras.lang.python" },
+  { import = "lazyvim.plugins.extras.formatting.black" }, -- autoformat
+
   -- 3️⃣ Qo‘shimcha rang mavzusi
   { "ellisonleao/gruvbox.nvim" },
   {
@@ -108,8 +111,6 @@ return {
     opts = {
       ensure_installed = {
         "ast-grep",
-        "black",
-        "blade-formatter",
         "clangd",
         "django-template-lsp",
         "flake8",
@@ -118,7 +119,6 @@ return {
         "intelephense",
         "isort",
         "lua-language-server",
-        "pyright",
         "rust-analyzer",
       },
     },
