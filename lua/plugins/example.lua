@@ -64,7 +64,15 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pyright = {},
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                enableReachabilityAnalysis = false,
+              },
+            },
+          },
+        },
       },
     },
   },
